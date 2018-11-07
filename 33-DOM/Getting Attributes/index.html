@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#div1 {
+			background-color: #00ff00;
+		}
+	</style>
+</head>
+<body>
+	<div class="class1" id="div1">Hello World</div>
+	<button class="class1" id="button1">Press me</button>
+
+	<script type="text/javascript">
+		var div1 = document.getElementById("div1");
+		var div1Class = div1.getAttribute('class');
+		var div1HTML = div1.getAttribute()
+		alert(div1.innerHTML);
+
+		var noValueDivColor = div1.style.background-color;
+		var div1ComputedStyle = window.getComputedStyle(div1).background-color
+		alert(window.getComputedStyle(div1).background-color);
+		div1.innerHTML = "Good Bye"
+		div1.setAttribute('class','class2');
+		alert(div1.getAttribute('class'));
+
+		div1.style.backgroundColor = '#0000ff';
+	</script>
+</body>
+</html>
